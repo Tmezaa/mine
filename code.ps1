@@ -37,8 +37,6 @@ reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Policies\Ex
 # Show file extensions
 Set-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name "HideFileExt" -Value 0
 
-# Show hidden icons 
-
 # Prevent entering sleep mode when closing the laptop lid
 powercfg -setacvalueindex SCHEME_CURRENT SUB_BUTTONS LIDACTION 0
 
