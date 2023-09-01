@@ -1,4 +1,4 @@
-
+PowerShell -ExecutionPolicy Bypass
 param([switch]$Elevated)
 
 function Test-Admin {
@@ -17,7 +17,6 @@ if ((Test-Admin) -eq $false)  {
 
 'Running with full privileges'
 
-PowerShell -ExecutionPolicy Bypass
 # Set the path of the blank screensaver
 $screensaverPath = "C:\Windows\System32\scrnsave.scr" 
 
